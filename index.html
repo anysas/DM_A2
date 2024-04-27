@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="climb_id" src="img!/climb1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="dash_id" src="img!/dash1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="dive_id" src="img!/dive1.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="glide_id" src="img!/glide1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="inv_id" src="img!/inv1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="light_id" src="img!/light1.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="pic_id" src="img!/pic1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="rest_id" src="img!/rest1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="slash_id" src="img!/slash1.png" height="200" width="200"/></div>
+        </div>
+        
+    </body>
+</html>
+
+<script>
+
+const climb_sound = document.createElement ("audio")
+climb_sound.src = "mp3/climb.mp3"
+
+const climb_element = document.getElementById ("climb_id")
+climb_element.onpointerover = () => {
+    climb_element.src = "img2/climb2.png"
+}
+
+climb_element.onpointerout = () => {
+    climb_element.src = "img!/climb1.png"
+}
+
+climb_element.onpointerdown = () => {
+    climb_sound.play ()
+}
+
+
+
+const dash_sound = document.createElement ("audio")
+dash_sound.src = "mp3/dash.mp3"
+
+const dash_element = document.getElementById ("dash_id")
+dash_element.onpointerover = () => {
+    dash_element.src = "img/dash2.png"
+}
+
+dash_element.onpointerout = () => {
+    dash_element.src = "img!/dash1.png"
+}
+
+dash_element.onpointerdown = () => {
+    dash_sound.play ()
+}
+
+
+
+const dive_sound = document.createElement ("audio")
+dive_sound.src = "mp3/dive.mp3"
+
+const dive_element = document.getElementById ("dive_id")
+dive_element.onpointerover = () => {
+    dive_element.src = "img2/dive2.png"
+}
+
+dive_element.onpointerout = () => {
+    dive_element.src = "img!/dive1.png"
+}
+
+dive_element.onpointerdown = () => {
+    dive_sound.play ()
+}
+
+
+
+const glide_sound = document.createElement ("audio")
+glide_sound.src = "mp3/glide.mp3"
+
+const glide_element = document.getElementById ("glide_id")
+glide_element.onpointerover = () => {
+    glide_element.src = "img2/glide2.png"
+}
+
+glide_element.onpointerout = () => {
+    glide_element.src = "img!/glide1.png"
+}
+
+glide_element.onpointerdown = () => {
+    glide_sound.play ()
+}
+
+
+
+const inv_sound = document.createElement ("audio")
+inv_sound.src = "mp3/inv.mp3"
+
+const inv_element = document.getElementById ("inv_id")
+inv_element.onpointerover = () => {
+    inv_element.src = "img2/inv2.png"
+}
+
+inv_element.onpointerout = () => {
+    inv_element.src = "img!/inv1.png"
+}
+
+inv_element.onpointerdown = () => {
+    inv_sound.play ()
+}
+
+
+
+const light_sound = document.createElement ("audio")
+light_sound.src = "mp3/light.mp3"
+
+const light_element = document.getElementById ("light_id")
+light_element.onpointerover = () => {
+    light_element.src = "img2/light2.png"
+}
+
+light_element.onpointerout = () => {
+    light_element.src = "img!/light1.png"
+}
+
+light_element.onpointerdown = () => {
+    light_sound.play ()
+}
+
+
+
+
+const pic_sound = document.createElement ("audio")
+pic_sound.src = "mp3/pic.mp3"
+
+const pic_element = document.getElementById ("pic_id")
+pic_element.onpointerover = () => {
+    pic_element.src = "img2/pic2.png"
+}
+
+pic_element.onpointerout = () => {
+    pic_element.src = "img!/pic1.png"
+}
+
+pic_element.onpointerdown = () => {
+    pic_sound.play ()
+}
+
+
+
+
+const rest_sound = document.createElement ("audio")
+rest_sound.src = "mp3/rest.mp3"
+
+const rest_element = document.getElementById ("rest_id")
+rest_element.onpointerover = () => {
+    rest_element.src = "img2/rest2.png"
+}
+
+rest_element.onpointerout = () => {
+    rest_element.src = "img!/rest1.png"
+}
+
+rest_element.onpointerdown = () => {
+    rest_sound.play ()
+}
+
+
+
+const slash_sound = document.createElement ("audio")
+slash_sound.src = "mp3/slash.mp3"
+
+const slash_element = document.getElementById ("slash_id")
+slash_element.onpointerover = () => {
+    slash_element.src = "img2/slash2.png"
+}
+
+slash_element.onpointerout = () => {
+    slash_element.src = "img!/slash1.png"
+}
+
+slash_element.onpointerdown = () => {
+    slash_sound.play ()
+}
+
+
+</script>
+
+
